@@ -127,6 +127,7 @@ class GraphQLView(View):
         else:
             api_url = request.build_absolute_uri(str(API_PATH))
             plugins_url= request.build_absolute_uri("/plugins/"),
+
         return render(
             request,
             "graphql/playground.html",
